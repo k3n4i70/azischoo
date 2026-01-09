@@ -1,41 +1,37 @@
-/* Внасяне на модерни шрифтове */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 
-/* Глобални настройки */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Модерен градиент */
-    background-attachment: fixed; /* Фонът стои неподвижен при скрол */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-attachment: fixed;
     color: #fff;
     line-height: 1.6;
 }
 
-/* Стилизация на заглавната част (Header) */
 header {
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 40px 0;
-    border-bottom: 3px solid #d4af37; /* Златна линия */
+    border-bottom: 3px solid #d4af37;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5em;
-    color: #d4af37; /* Златен текст */
+    color: #d4af37;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
-/* Навигационно меню */
 nav {
     background: #111;
     text-align: center;
-    position: sticky; /* Менюто залепва горе при скрол */
+    position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
@@ -60,21 +56,20 @@ nav ul li a {
     text-transform: uppercase;
     padding: 8px 15px;
     border: 1px solid transparent;
-    transition: all 0.3s ease; /* Плавна анимация */
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #d4af37;
     border: 1px solid #d4af37;
     background-color: rgba(212, 175, 55, 0.1);
-    box-shadow: 0 0 10px #d4af37; /* Светещ ефект */
+    box-shadow: 0 0 10px #d4af37;
 }
 
-/* Основен контейнер */
 main {
     max-width: 1100px;
     margin: 40px auto;
-    background: rgba(20, 20, 20, 0.9); /* Полупрозрачен черен фон */
+    background: rgba(20, 20, 20, 0.9);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -90,7 +85,6 @@ h2 {
     margin-top: 0;
 }
 
-/* Стил за галерията */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +102,7 @@ h2 {
 }
 
 .photo-card:hover {
-    transform: scale(1.05) rotate(1deg); /* Леко увеличение и завъртане при посочване */
+    transform: scale(1.05) rotate(1deg);
     box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
     border: 1px solid #d4af37;
 }
@@ -127,7 +121,6 @@ h2 {
     text-align: center;
 }
 
-/* Стил за таблицата (Биография) */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -152,10 +145,9 @@ table td {
 }
 
 table tr:hover {
-    background-color: #333; /* Промяна на цвета на реда при посочване */
+    background-color: #333;
 }
 
-/* Стил за мултимедия */
 .media-item {
     background: #1f1f1f;
     padding: 20px;
@@ -174,7 +166,6 @@ table tr:hover {
     margin-top: 0;
 }
 
-/* Футър */
 footer {
     background: #000;
     color: #666;
@@ -183,4 +174,8 @@ footer {
     margin-top: 50px;
     border-top: 1px solid #333;
     font-size: 0.85em;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
